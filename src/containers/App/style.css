@@ -1,0 +1,201 @@
+.container {
+  min-width: 350px;
+  display: flex;
+  flex-basis: 90%;
+  flex-direction: column;
+}
+
+.container > h2 {
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.container-background {
+  position: absolute;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100%;
+  background-blend-mode: multiply;
+  background-color: #0707074a;
+  z-index: -1;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-container {
+  display: flex;
+  height: 75px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon > img {
+  height: 75px;
+}
+
+.status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.status {
+  height: 30px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  width: 40%;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.stats-container {
+  background-color: #ffffffcc;
+  border: 1px #a1a99c solid;
+  border-radius: 7px;
+  height: 110px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.stats-home,
+.stats-draw,
+.stats-away {
+  height: 100%;
+  cursor: pointer;
+
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-draw {
+  border-style: solid;
+  border-color: #a1a99c;
+  border-width: 0 1px;
+  flex: 1;
+}
+
+.stats-title,
+.stats-odds {
+  text-align: center;
+  height: 40px;
+}
+
+.stats-odds {
+  font-size: 2.2em;
+}
+.stats-votes {
+  font-size: 0.8em;
+}
+
+.country-container {
+  padding: 5px;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.country-flag {
+  flex-basis: 35px;
+}
+
+.country-label {
+  font-size: 0.7em;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.country-championship {
+  color: #ffffff;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.date-title {
+  height: 30px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  width: 40%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.status,
+.date-title {
+  background-color: #ffffff70;
+}
+
+.status-playing,
+.status-scheduled,
+.status-played {
+  height: 7px;
+  width: 7px;
+  margin-bottom: 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-playing {
+  background-color: #3ba22d;
+}
+
+.status-scheduled {
+  background-color: #7084dd;
+}
+
+.status-played {
+  background-color: #bbb;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    flex-basis: 80%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    flex-basis: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    flex-basis: 50%;
+  }
+}

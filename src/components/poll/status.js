@@ -21,7 +21,6 @@ function StatusSection(props) {
   return (
     <div className="status-container">
       <div className="status">
-        {" "}
         <span className={pointerClassName}></span> {status}
       </div>
     </div>

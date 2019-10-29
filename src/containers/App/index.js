@@ -30,9 +30,8 @@ class App extends Component {
     return game ? (
       <>
         <h2>
-          {" "}
-          Click on the odds to share your prediction for this{" "}
-          {sportName(game.sport)} match.{" "}
+          Click on the odds to share your prediction for this
+          {sportName(game.sport)} match.
         </h2>
         <CountrySection country={game.country} group={game.group} />
         <StatusSection status={game.state} />
